@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package proto;
+option java_generic_services = true;
+option java_multiple_files = true;
+//option java_package = "io.grpc.examples.helloworld";
+
+service EvaManageService {
+  //保存用户日志
+  rpc SaveEvaUserLog (EvaUserLog) returns (EvaResult) {}
+  //查询用户日志
+  rpc GetEvaUserLogs (EvaLogCondition) returns (EvaUserLogSearchData) {}
+
+}
+message EvaUserLog {
+  int64  Id = 1;
+  string Name = 2;
+  string Role = 3;
+  string Ip = 4;
+  string CreateAt = 5; //创建时间
+  string StaffId = 6;   //用户ID
+  string StaffName = 7;  //用户姓名
+  string SystemCode = 8;  //系统编号
+  int32 Type = 9; // 用户日志类型 1：用户登录日志   2：用户登出日志
+}
+
+message EvaLogCondition {
+  string StartTime = 1; // 开始时间
+  string EndTime = 2; // 结束时间
+  int32 PageIndex = 3; // 当前第几页
+  int32 PageSize = 4; // 每页大小
+  string StaffName = 5; //评价员工的name
+  string SystemCode = 6; //系统编号
+  int32 Type = 7;  // 用户日志类型 0:查询所有 1：用户登录日志   2：用户登出日志
+}
+
+message EvaUserLogSearchData {
+  int32 Code = 1;
+  string Message = 2;
+  int32  Total = 3;
+  repeated EvaUserLog Data = 4;
+}
+
+message EvaResult {
+  int32 Code = 1;
+  string Message = 2;
+  int64 PrimaryKey = 3;
+}
