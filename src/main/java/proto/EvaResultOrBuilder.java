@@ -17,7 +17,7 @@ public interface EvaResultOrBuilder extends
    * <code>string Message = 2;</code>
    * @return The message.
    */
-  java.lang.String getMessage();
+  String getMessage();
   /**
    * <code>string Message = 2;</code>
    * @return The bytes for message.

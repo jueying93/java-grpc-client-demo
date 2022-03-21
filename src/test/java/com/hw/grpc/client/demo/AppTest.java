@@ -1,4 +1,4 @@
-package com.hw.rpc.demo;
+package com.hw.grpc.client.demo;
 
 import static org.junit.Assert.assertTrue;
 

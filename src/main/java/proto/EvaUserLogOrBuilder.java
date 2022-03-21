@@ -17,7 +17,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string Name = 2;</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>string Name = 2;</code>
    * @return The bytes for name.
@@ -29,7 +29,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string Role = 3;</code>
    * @return The role.
    */
-  java.lang.String getRole();
+  String getRole();
   /**
    * <code>string Role = 3;</code>
    * @return The bytes for role.
@@ -41,7 +41,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string Ip = 4;</code>
    * @return The ip.
    */
-  java.lang.String getIp();
+  String getIp();
   /**
    * <code>string Ip = 4;</code>
    * @return The bytes for ip.
@@ -57,7 +57,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string CreateAt = 5;</code>
    * @return The createAt.
    */
-  java.lang.String getCreateAt();
+  String getCreateAt();
   /**
    * <pre>
    *创建时间
@@ -77,7 +77,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string StaffId = 6;</code>
    * @return The staffId.
    */
-  java.lang.String getStaffId();
+  String getStaffId();
   /**
    * <pre>
    *用户ID
@@ -97,7 +97,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string StaffName = 7;</code>
    * @return The staffName.
    */
-  java.lang.String getStaffName();
+  String getStaffName();
   /**
    * <pre>
    *用户姓名
@@ -117,7 +117,7 @@ public interface EvaUserLogOrBuilder extends
    * <code>string SystemCode = 8;</code>
    * @return The systemCode.
    */
-  java.lang.String getSystemCode();
+  String getSystemCode();
   /**
    * <pre>
    *系统编号

@@ -42,7 +42,7 @@ public final class Evamanage {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\017evamanage.proto\022\005proto\"\230\001\n\nEvaUserLog\022" +
       "\n\n\002Id\030\001 \001(\003\022\014\n\004Name\030\002 \001(\t\022\014\n\004Role\030\003 \001(\t\022" +
       "\n\n\002Ip\030\004 \001(\t\022\020\n\010CreateAt\030\005 \001(\t\022\017\n\007StaffId" +
@@ -70,25 +70,25 @@ public final class Evamanage {
     internal_static_proto_EvaUserLog_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_EvaUserLog_descriptor,
-        new java.lang.String[] { "Id", "Name", "Role", "Ip", "CreateAt", "StaffId", "StaffName", "SystemCode", "Type", });
+        new String[] { "Id", "Name", "Role", "Ip", "CreateAt", "StaffId", "StaffName", "SystemCode", "Type", });
     internal_static_proto_EvaLogCondition_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_proto_EvaLogCondition_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_EvaLogCondition_descriptor,
-        new java.lang.String[] { "StartTime", "EndTime", "PageIndex", "PageSize", "StaffName", "SystemCode", "Type", });
+        new String[] { "StartTime", "EndTime", "PageIndex", "PageSize", "StaffName", "SystemCode", "Type", });
     internal_static_proto_EvaUserLogSearchData_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_proto_EvaUserLogSearchData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_EvaUserLogSearchData_descriptor,
-        new java.lang.String[] { "Code", "Message", "Total", "Data", });
+        new String[] { "Code", "Message", "Total", "Data", });
     internal_static_proto_EvaResult_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_proto_EvaResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_EvaResult_descriptor,
-        new java.lang.String[] { "Code", "Message", "PrimaryKey", });
+        new String[] { "Code", "Message", "PrimaryKey", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

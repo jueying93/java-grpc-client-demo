@@ -15,7 +15,7 @@ public interface EvaLogConditionOrBuilder extends
    * <code>string StartTime = 1;</code>
    * @return The startTime.
    */
-  java.lang.String getStartTime();
+  String getStartTime();
   /**
    * <pre>
    * 开始时间
@@ -35,7 +35,7 @@ public interface EvaLogConditionOrBuilder extends
    * <code>string EndTime = 2;</code>
    * @return The endTime.
    */
-  java.lang.String getEndTime();
+  String getEndTime();
   /**
    * <pre>
    * 结束时间
@@ -75,7 +75,7 @@ public interface EvaLogConditionOrBuilder extends
    * <code>string StaffName = 5;</code>
    * @return The staffName.
    */
-  java.lang.String getStaffName();
+  String getStaffName();
   /**
    * <pre>
    *评价员工的name
@@ -95,7 +95,7 @@ public interface EvaLogConditionOrBuilder extends
    * <code>string SystemCode = 6;</code>
    * @return The systemCode.
    */
-  java.lang.String getSystemCode();
+  String getSystemCode();
   /**
    * <pre>
    *系统编号

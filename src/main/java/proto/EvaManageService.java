@@ -20,8 +20,8 @@ public  abstract class EvaManageService
      */
     public abstract void saveEvaUserLog(
         com.google.protobuf.RpcController controller,
-        proto.EvaUserLog request,
-        com.google.protobuf.RpcCallback<proto.EvaResult> done);
+        EvaUserLog request,
+        com.google.protobuf.RpcCallback<EvaResult> done);
 
     /**
      * <pre>
@@ -32,27 +32,27 @@ public  abstract class EvaManageService
      */
     public abstract void getEvaUserLogs(
         com.google.protobuf.RpcController controller,
-        proto.EvaLogCondition request,
-        com.google.protobuf.RpcCallback<proto.EvaUserLogSearchData> done);
+        EvaLogCondition request,
+        com.google.protobuf.RpcCallback<EvaUserLogSearchData> done);
 
   }
 
   public static com.google.protobuf.Service newReflectiveService(
       final Interface impl) {
     return new EvaManageService() {
-      @java.lang.Override
+      @Override
       public  void saveEvaUserLog(
           com.google.protobuf.RpcController controller,
-          proto.EvaUserLog request,
-          com.google.protobuf.RpcCallback<proto.EvaResult> done) {
+          EvaUserLog request,
+          com.google.protobuf.RpcCallback<EvaResult> done) {
         impl.saveEvaUserLog(controller, request, done);
       }
 
-      @java.lang.Override
+      @Override
       public  void getEvaUserLogs(
           com.google.protobuf.RpcController controller,
-          proto.EvaLogCondition request,
-          com.google.protobuf.RpcCallback<proto.EvaUserLogSearchData> done) {
+          EvaLogCondition request,
+          com.google.protobuf.RpcCallback<EvaUserLogSearchData> done) {
         impl.getEvaUserLogs(controller, request, done);
       }
 
@@ -73,17 +73,17 @@ public  abstract class EvaManageService
           com.google.protobuf.Message request)
           throws com.google.protobuf.ServiceException {
         if (method.getService() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
             "Service.callBlockingMethod() given method descriptor for " +
             "wrong service type.");
         }
         switch(method.getIndex()) {
           case 0:
-            return impl.saveEvaUserLog(controller, (proto.EvaUserLog)request);
+            return impl.saveEvaUserLog(controller, (EvaUserLog)request);
           case 1:
-            return impl.getEvaUserLogs(controller, (proto.EvaLogCondition)request);
+            return impl.getEvaUserLogs(controller, (EvaLogCondition)request);
           default:
-            throw new java.lang.AssertionError("Can't get here.");
+            throw new AssertionError("Can't get here.");
         }
       }
 
@@ -91,17 +91,17 @@ public  abstract class EvaManageService
           getRequestPrototype(
           com.google.protobuf.Descriptors.MethodDescriptor method) {
         if (method.getService() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
             "Service.getRequestPrototype() given method " +
             "descriptor for wrong service type.");
         }
         switch(method.getIndex()) {
           case 0:
-            return proto.EvaUserLog.getDefaultInstance();
+            return EvaUserLog.getDefaultInstance();
           case 1:
-            return proto.EvaLogCondition.getDefaultInstance();
+            return EvaLogCondition.getDefaultInstance();
           default:
-            throw new java.lang.AssertionError("Can't get here.");
+            throw new AssertionError("Can't get here.");
         }
       }
 
@@ -109,17 +109,17 @@ public  abstract class EvaManageService
           getResponsePrototype(
           com.google.protobuf.Descriptors.MethodDescriptor method) {
         if (method.getService() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
             "Service.getResponsePrototype() given method " +
             "descriptor for wrong service type.");
         }
         switch(method.getIndex()) {
           case 0:
-            return proto.EvaResult.getDefaultInstance();
+            return EvaResult.getDefaultInstance();
           case 1:
-            return proto.EvaUserLogSearchData.getDefaultInstance();
+            return EvaUserLogSearchData.getDefaultInstance();
           default:
-            throw new java.lang.AssertionError("Can't get here.");
+            throw new AssertionError("Can't get here.");
         }
       }
 
@@ -135,8 +135,8 @@ public  abstract class EvaManageService
    */
   public abstract void saveEvaUserLog(
       com.google.protobuf.RpcController controller,
-      proto.EvaUserLog request,
-      com.google.protobuf.RpcCallback<proto.EvaResult> done);
+      EvaUserLog request,
+      com.google.protobuf.RpcCallback<EvaResult> done);
 
   /**
    * <pre>
@@ -147,13 +147,13 @@ public  abstract class EvaManageService
    */
   public abstract void getEvaUserLogs(
       com.google.protobuf.RpcController controller,
-      proto.EvaLogCondition request,
-      com.google.protobuf.RpcCallback<proto.EvaUserLogSearchData> done);
+      EvaLogCondition request,
+      com.google.protobuf.RpcCallback<EvaUserLogSearchData> done);
 
   public static final
       com.google.protobuf.Descriptors.ServiceDescriptor
       getDescriptor() {
-    return proto.Evamanage.getDescriptor().getServices().get(0);
+    return Evamanage.getDescriptor().getServices().get(0);
   }
   public final com.google.protobuf.Descriptors.ServiceDescriptor
       getDescriptorForType() {
@@ -167,23 +167,23 @@ public  abstract class EvaManageService
       com.google.protobuf.RpcCallback<
         com.google.protobuf.Message> done) {
     if (method.getService() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
+      throw new IllegalArgumentException(
         "Service.callMethod() given method descriptor for wrong " +
         "service type.");
     }
     switch(method.getIndex()) {
       case 0:
-        this.saveEvaUserLog(controller, (proto.EvaUserLog)request,
-          com.google.protobuf.RpcUtil.<proto.EvaResult>specializeCallback(
+        this.saveEvaUserLog(controller, (EvaUserLog)request,
+          com.google.protobuf.RpcUtil.<EvaResult>specializeCallback(
             done));
         return;
       case 1:
-        this.getEvaUserLogs(controller, (proto.EvaLogCondition)request,
-          com.google.protobuf.RpcUtil.<proto.EvaUserLogSearchData>specializeCallback(
+        this.getEvaUserLogs(controller, (EvaLogCondition)request,
+          com.google.protobuf.RpcUtil.<EvaUserLogSearchData>specializeCallback(
             done));
         return;
       default:
-        throw new java.lang.AssertionError("Can't get here.");
+        throw new AssertionError("Can't get here.");
     }
   }
 
@@ -191,17 +191,17 @@ public  abstract class EvaManageService
       getRequestPrototype(
       com.google.protobuf.Descriptors.MethodDescriptor method) {
     if (method.getService() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
+      throw new IllegalArgumentException(
         "Service.getRequestPrototype() given method " +
         "descriptor for wrong service type.");
     }
     switch(method.getIndex()) {
       case 0:
-        return proto.EvaUserLog.getDefaultInstance();
+        return EvaUserLog.getDefaultInstance();
       case 1:
-        return proto.EvaLogCondition.getDefaultInstance();
+        return EvaLogCondition.getDefaultInstance();
       default:
-        throw new java.lang.AssertionError("Can't get here.");
+        throw new AssertionError("Can't get here.");
     }
   }
 
@@ -209,17 +209,17 @@ public  abstract class EvaManageService
       getResponsePrototype(
       com.google.protobuf.Descriptors.MethodDescriptor method) {
     if (method.getService() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
+      throw new IllegalArgumentException(
         "Service.getResponsePrototype() given method " +
         "descriptor for wrong service type.");
     }
     switch(method.getIndex()) {
       case 0:
-        return proto.EvaResult.getDefaultInstance();
+        return EvaResult.getDefaultInstance();
       case 1:
-        return proto.EvaUserLogSearchData.getDefaultInstance();
+        return EvaUserLogSearchData.getDefaultInstance();
       default:
-        throw new java.lang.AssertionError("Can't get here.");
+        throw new AssertionError("Can't get here.");
     }
   }
 
@@ -228,7 +228,7 @@ public  abstract class EvaManageService
     return new Stub(channel);
   }
 
-  public static final class Stub extends proto.EvaManageService implements Interface {
+  public static final class Stub extends EvaManageService implements Interface {
     private Stub(com.google.protobuf.RpcChannel channel) {
       this.channel = channel;
     }
@@ -241,32 +241,32 @@ public  abstract class EvaManageService
 
     public  void saveEvaUserLog(
         com.google.protobuf.RpcController controller,
-        proto.EvaUserLog request,
-        com.google.protobuf.RpcCallback<proto.EvaResult> done) {
+        EvaUserLog request,
+        com.google.protobuf.RpcCallback<EvaResult> done) {
       channel.callMethod(
         getDescriptor().getMethods().get(0),
         controller,
         request,
-        proto.EvaResult.getDefaultInstance(),
+        EvaResult.getDefaultInstance(),
         com.google.protobuf.RpcUtil.generalizeCallback(
           done,
-          proto.EvaResult.class,
-          proto.EvaResult.getDefaultInstance()));
+          EvaResult.class,
+          EvaResult.getDefaultInstance()));
     }
 
     public  void getEvaUserLogs(
         com.google.protobuf.RpcController controller,
-        proto.EvaLogCondition request,
-        com.google.protobuf.RpcCallback<proto.EvaUserLogSearchData> done) {
+        EvaLogCondition request,
+        com.google.protobuf.RpcCallback<EvaUserLogSearchData> done) {
       channel.callMethod(
         getDescriptor().getMethods().get(1),
         controller,
         request,
-        proto.EvaUserLogSearchData.getDefaultInstance(),
+        EvaUserLogSearchData.getDefaultInstance(),
         com.google.protobuf.RpcUtil.generalizeCallback(
           done,
-          proto.EvaUserLogSearchData.class,
-          proto.EvaUserLogSearchData.getDefaultInstance()));
+          EvaUserLogSearchData.class,
+          EvaUserLogSearchData.getDefaultInstance()));
     }
   }
 
@@ -276,14 +276,14 @@ public  abstract class EvaManageService
   }
 
   public interface BlockingInterface {
-    public proto.EvaResult saveEvaUserLog(
+    public EvaResult saveEvaUserLog(
         com.google.protobuf.RpcController controller,
-        proto.EvaUserLog request)
+        EvaUserLog request)
         throws com.google.protobuf.ServiceException;
 
-    public proto.EvaUserLogSearchData getEvaUserLogs(
+    public EvaUserLogSearchData getEvaUserLogs(
         com.google.protobuf.RpcController controller,
-        proto.EvaLogCondition request)
+        EvaLogCondition request)
         throws com.google.protobuf.ServiceException;
   }
 
@@ -294,27 +294,27 @@ public  abstract class EvaManageService
 
     private final com.google.protobuf.BlockingRpcChannel channel;
 
-    public proto.EvaResult saveEvaUserLog(
+    public EvaResult saveEvaUserLog(
         com.google.protobuf.RpcController controller,
-        proto.EvaUserLog request)
+        EvaUserLog request)
         throws com.google.protobuf.ServiceException {
-      return (proto.EvaResult) channel.callBlockingMethod(
+      return (EvaResult) channel.callBlockingMethod(
         getDescriptor().getMethods().get(0),
         controller,
         request,
-        proto.EvaResult.getDefaultInstance());
+        EvaResult.getDefaultInstance());
     }
 
 
-    public proto.EvaUserLogSearchData getEvaUserLogs(
+    public EvaUserLogSearchData getEvaUserLogs(
         com.google.protobuf.RpcController controller,
-        proto.EvaLogCondition request)
+        EvaLogCondition request)
         throws com.google.protobuf.ServiceException {
-      return (proto.EvaUserLogSearchData) channel.callBlockingMethod(
+      return (EvaUserLogSearchData) channel.callBlockingMethod(
         getDescriptor().getMethods().get(1),
         controller,
         request,
-        proto.EvaUserLogSearchData.getDefaultInstance());
+        EvaUserLogSearchData.getDefaultInstance());
     }
 
   }

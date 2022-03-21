@@ -17,7 +17,7 @@ public interface EvaUserLogSearchDataOrBuilder extends
    * <code>string Message = 2;</code>
    * @return The message.
    */
-  java.lang.String getMessage();
+  String getMessage();
   /**
    * <code>string Message = 2;</code>
    * @return The bytes for message.
@@ -34,12 +34,12 @@ public interface EvaUserLogSearchDataOrBuilder extends
   /**
    * <code>repeated .proto.EvaUserLog Data = 4;</code>
    */
-  java.util.List<proto.EvaUserLog> 
+  java.util.List<EvaUserLog>
       getDataList();
   /**
    * <code>repeated .proto.EvaUserLog Data = 4;</code>
    */
-  proto.EvaUserLog getData(int index);
+  EvaUserLog getData(int index);
   /**
    * <code>repeated .proto.EvaUserLog Data = 4;</code>
    */
@@ -47,11 +47,11 @@ public interface EvaUserLogSearchDataOrBuilder extends
   /**
    * <code>repeated .proto.EvaUserLog Data = 4;</code>
    */
-  java.util.List<? extends proto.EvaUserLogOrBuilder> 
+  java.util.List<? extends EvaUserLogOrBuilder>
       getDataOrBuilderList();
   /**
    * <code>repeated .proto.EvaUserLog Data = 4;</code>
    */
-  proto.EvaUserLogOrBuilder getDataOrBuilder(
+  EvaUserLogOrBuilder getDataOrBuilder(
       int index);
 }

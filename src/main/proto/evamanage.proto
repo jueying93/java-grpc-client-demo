@@ -10,7 +10,6 @@ service EvaManageService {
   rpc SaveEvaUserLog (EvaUserLog) returns (EvaResult) {}
   //查询用户日志
   rpc GetEvaUserLogs (EvaLogCondition) returns (EvaUserLogSearchData) {}
-
 }
 message EvaUserLog {
   int64  Id = 1;
